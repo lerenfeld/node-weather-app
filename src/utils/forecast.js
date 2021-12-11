@@ -15,7 +15,7 @@ request( {url:url  ,json:true } ,(error, response)=>{
   }
   else{
     const data = response.body.current
-    callback(undefined , data.weather_descriptions[0] + '. The temperator is : '+ data.temperature +'. And its feelsLike : '+ data.feelslike)    
+    callback(undefined , data.weather_descriptions[0] + '. The temperator is : '+ data.temperature +'. And its feelsLike : '+ data.feelslike + ', and the humidity is :  '+data.humidity+'% ')    
   }
 
 })
