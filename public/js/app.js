@@ -19,7 +19,7 @@ const address = search.value
 
 msg1.textContent = "Loading..."
 
-fetch('http://localhost:3000/weather?address='+address).then((Response)=>{
+fetch('/weather?address='+address).then((Response)=>{
 Response.json().then((data) => {
 
     if(data.error)
